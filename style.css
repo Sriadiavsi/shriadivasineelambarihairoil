@@ -55,6 +55,11 @@ nav {
     width: 100%;
     height: 70vh;
 }
+.HowToPlaceOrder{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 
 .first-section-main {
     width: 35vw;
@@ -423,10 +428,9 @@ footer{
     padding: 50px 0px;
     background-color: #002108;
     color: white;
-    flex-wrap: wrap;
 }
 footer *{
-    margin: 10px 20px;
+    margin: 10px 5px;
 }
 .quick-links{
     display: flex;
@@ -466,7 +470,11 @@ footer *{
     border-radius: 15px;
     margin: 5px 33.5px;
 }
-
+@media (width <1500px){
+    footer{
+        flex-wrap: wrap;
+    }
+}
 @media (width < 768px) {
     .product-section {
         flex-direction: column;
